@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.bbdspread.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Sep 2025 06:38:24 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fry 6k1 </title>
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0D0D0D;
+      /* Fond noir */
+      color: #FFFFFF;
+      background-size: 300% 300%;
+      animation: gradientMove 15s ease infinite;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .title-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background: #1A1A1A;
+      color: #FFFFFF;
+      border-bottom: 1px solid #B37200;
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .title-bar h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(184, 134, 11, 0.5);
+      position: relative;
+      display: inline-block;
+    }
+
+    .title-bar h1::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #FFA300, #FFD180);
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+
+    .title-bar nav {
+      display: flex;
+      gap: 8px;
+    }
+
+    .title-bar nav a {
+      padding: 8px;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 0;
+      background-color: transparent;
+      border-radius: 50%;
+      transition: all 0.3s;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .title-bar nav a i {
+      font-size: 1.2rem;
+    }
+
+    .title-bar nav a:hover {
+      background-color: rgba(255, 215, 128, 0.2);
+      transform: scale(1.1);
+      border-color: #FFD180;
+    }
+
+    .promo-banner {
+      background: linear-gradient(90deg, #C07D02, #EB8604);
+      color: #FFFFFF;
+      text-align: center;
+      padding: 12px 10px;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      margin: 8px auto;
+      max-width: 95%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.02);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .promo-banner a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: bold;
+      transition: color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .promo-banner a:hover {
+      color: #FFD180;
+    }
+
+    .search-container {
+      text-align: center;
+      margin: 20px 0;
+      padding: 0 10px;
+    }
+
+    .search-bar {
+      width: 100%;
+      max-width: 600px;
+      padding: 12px;
+      font-size: 1rem;
+      border: 2px solid #EB8604;
+      border-radius: 30px;
+      outline: none;
+      background-color: rgba(192, 125, 2, 0.8);
+      color: #FFFFFF;
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .search-bar:focus {
+      background-color: rgba(235, 134, 4, 0.9);
+      border-color: #C07D02;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .search-bar::placeholder {
+      color: #FFD180;
+      opacity: 0.8;
+    }
+
+    .selector-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin: 15px 0;
+      flex-wrap: wrap;
+      padding: 0 10px;
+    }
+
+    .selector-buttons button {
+      padding: 8px 12px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border: 2px solid #003b6f;
+      border-radius: 30px;
+      background-color: rgba(0, 59, 111, 0.8);
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .selector-buttons button i {
+      font-size: 0.8rem;
+    }
+
+    .selector-buttons button:hover,
+    .selector-buttons button.active {
+      background-color: #ffcc33;
+      color: #002855;
+      border-color: #ffcc33;
+      transform: translateY(-2px);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 10px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background: rgba(20, 30, 40, 0.95);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 215, 128, 0.3);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      background: rgba(30, 40, 50, 0.98);
+      border-color: rgba(255, 215, 128, 0.5);
+    }
+
+    .product-image-container {
+      position: relative;
+      width: 100%;
+      height: 160px;
+      overflow: hidden;
+      background: #1a1a1a;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .product-info {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-card h2 {
+      font-size: 0.9rem;
+      margin: 6px 0;
+      color: #FFD180;
+      font-weight: 600;
+      line-height: 1.3;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .product-price {
+      font-size: 1.1rem;
+      margin: 8px 0;
+      font-weight: bold;
+      color: #FFA300;
+      letter-spacing: 0.5px;
+    }
+
+    .product-actions {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-top: auto;
+      padding-top: 8px;
+    }
+
+    .buy-button,
+    .quality-check {
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0.8rem;
+      transition: all 0.3s ease;
+      text-align: center;
+      flex: 1;
+      max-width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .buy-button {
+      background-color: #C07D02;
+      color: white;
+    }
+
+    .quality-check {
+      background-color: #09325F;
+      color: white;
+    }
+
+    .buy-button:hover,
+    .quality-check:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .buy-button:hover {
+      background-color: #EB8604;
+    }
+
+    .quality-check:hover {
+      background-color: #003b6f;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      animation: fadeIn 0.5s;
+      overflow: auto;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .modal-content {
+      background: linear-gradient(135deg, #051c35, #0a2a4a);
+      margin: 20px auto;
+      padding: 25px;
+      width: 95%;
+      max-width: 900px;
+      border-radius: 15px;
+      text-align: center;
+      position: relative;
+      color: #E0E0E0;
+      box-shadow: 0 6px 20px rgba(9, 50, 95, 0.5);
+      border: 1px solid rgba(255, 215, 128, 0.2);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 215, 128, 0.3);
+    }
+
+    .modal-title {
+      font-size: 1.5rem;
+      color: #FFD180;
+      font-weight: 600;
+      text-shadow: 0 0 5px rgba(255, 209, 128, 0.5);
+    }
+
+    .close {
+      color: #FFFFFF;
+      font-size: 1.8rem;
+      cursor: pointer;
+      transition: transform 0.3s;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .close:hover {
+      transform: rotate(90deg);
+      color: #FFA300;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .modal-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .main-image-container {
+      width: 100%;
+      max-height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      padding: 15px;
+      border: 1px solid rgba(255, 215, 128, 0.2);
+    }
+
+    #main-image {
+      max-width: 100%;
+      max-height: 60vh;
+      width: auto;
+      height: auto;
+      border-radius: 8px;
+      object-fit: contain;
+      background: white;
+      padding: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .thumbnail-container {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 215, 128, 0.1);
+    }
+
+    .thumbnail-container img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      transition: all 0.3s;
+      background: white;
+      padding: 3px;
+    }
+
+    .thumbnail-container img:hover,
+    .thumbnail-container img.active {
+      border-color: #FFA300;
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(255, 163, 0, 0.5);
+    }
+
+    .loading-spinner {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: #FFA300;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    footer {
+      background: rgba(9, 50, 95, 0.9);
+      padding: 15px;
+      text-align: center;
+      color: #FFA300;
+      font-size: 0.9rem;
+      border-top: 1px solid #B37200;
+      margin-top: 30px;
+      backdrop-filter: blur(5px);
+    }
+
+    .trending-badge {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: linear-gradient(45deg, #4B0082, #9400D3);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 15px;
+      font-size: 0.7rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+       display: none !important;
+    }
+
+    .trending-badge i {
+      font-size: 0.7rem;
+       display: none !important;
+    }
+
+    .view-count {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(9, 50, 95, 0.9);
+      color: white;
+      padding: 3px 8px;
+      border-radius: 8px;
+      font-size: 0.7rem;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+       display: none !important;
+    }
+
+    .view-count i {
+      font-size: 0.7rem;
+       display: none !important;
+    }
+
+    /* Signup Modal */
+    .signup-modal {
+      display: none;
+      position: fixed;
+      z-index: 1001;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      animation: fadeIn 0.5s;
+    }
+
+    .signup-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(135deg, #1a2a3a, #2a3a4a);
+      padding: 40px 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+      animation: slideUp 0.5s ease-out;
+      border: 1px solid rgba(255, 215, 128, 0.3);
+      overflow: hidden;
+    }
+
+    .signup-content::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg,
+          transparent 0%,
+          rgba(255, 215, 128, 0.1) 50%,
+          transparent 100%);
+      transform: rotate(45deg);
+      animation: shine 3s infinite;
+    }
+
+    @keyframes shine {
+      0% {
+        transform: translateX(-100%) rotate(45deg);
+      }
+
+      100% {
+        transform: translateX(100%) rotate(45deg);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    }
+
+    .signup-header {
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .signup-icon {
+      font-size: 3.5rem;
+      color: #FFA300;
+      margin-bottom: 15px;
+      text-shadow: 0 0 15px rgba(255, 163, 0, 0.7);
+    }
+
+    .signup-content h2 {
+      color: white;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .signup-content h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #FFA300, #FFD180);
+      border-radius: 3px;
+    }
+
+    .signup-content p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      position: relative;
+      z-index: 2;
+    }
+
+    .signup-benefits {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 15px;
+      border-radius: 8px;
+      border-left: 3px solid #FFA300;
+    }
+
+    .benefit-icon {
+      color: #FFD180;
+      font-size: 1.2rem;
+    }
+
+    .benefit-text {
+      color: white;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    .signup-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .signup-btn {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-width: 150px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .signup-btn.yes {
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      color: white;
+    }
+
+    .signup-btn.no {
+      background: linear-gradient(135deg, #f44336, #c62828);
+      color: white;
+    }
+
+    .signup-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .signup-btn:active {
+      transform: translateY(0);
+    }
+
+    .signup-btn i {
+      font-size: 1.2rem;
+    }
+
+    /* Social Modal */
+    .social-modal {
+      display: none;
+      position: fixed;
+      z-index: 1002;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      animation: fadeIn 0.5s;
+    }
+
+    .social-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(135deg, #1a2a3a, #2a3a4a);
+      padding: 40px 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+      animation: slideUp 0.5s ease-out;
+      border: 1px solid rgba(255, 215, 128, 0.3);
+      overflow: hidden;
+    }
+
+    .social-header {
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .social-icon {
+      font-size: 3.5rem;
+      color: #FFA300;
+      margin-bottom: 15px;
+      text-shadow: 0 0 15px rgba(255, 163, 0, 0.7);
+    }
+
+    .social-content h2 {
+      color: white;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .social-content h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #FFA300, #FFD180);
+      border-radius: 3px;
+    }
+
+    .social-content p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      position: relative;
+      z-index: 2;
+    }
+
+    .social-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .social-btn {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-btn.discord {
+      background: linear-gradient(135deg, #5865F2, #404EED);
+      color: white;
+    }
+
+    .social-btn.telegram {
+      background: linear-gradient(135deg, #2AABEE, #229ED9);
+      color: white;
+    }
+
+    .social-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-btn:active {
+      transform: translateY(0);
+    }
+
+    .social-btn i {
+      font-size: 1.2rem;
+    }
+
+    .arrow-pointer {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      pointer-events: none;
+      z-index: 1003;
+      animation: point 1.5s infinite alternate;
+    }
+
+    @keyframes point {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Larger mobile devices */
+    @media screen and (min-width: 400px) {
+      .title-bar h1 {
+        font-size: 1.7rem;
+      }
+
+      .title-bar nav a {
+        width: 40px;
+        height: 40px;
+      }
+
+      .title-bar nav a i {
+        font-size: 1.3rem;
+      }
+
+      .product-image-container {
+        height: 180px;
+      }
+
+      .product-card h2 {
+        font-size: 1rem;
+      }
+
+      .product-price {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* Tablets and larger */
+    @media screen and (min-width: 768px) {
+      .title-bar {
+        padding: 20px;
+      }
+
+      .title-bar h1 {
+        font-size: 2rem;
+      }
+
+      .title-bar nav {
+        gap: 15px;
+      }
+
+      .title-bar nav a {
+        padding: 10px 15px;
+        font-size: 1rem;
+        width: auto;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .title-bar nav a i {
+        margin-right: 8px;
+        font-size: 1rem;
+      }
+
+      .promo-banner {
+        padding: 15px;
+        font-size: 1.2rem;
+      }
+
+      .selector-buttons {
+        gap: 12px;
+      }
+
+      .selector-buttons button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 15px;
+      }
+
+      .product-image-container {
+        height: 200px;
+      }
+
+      .product-card h2 {
+        font-size: 1.1rem;
+      }
+
+      .product-price {
+        font-size: 1.3rem;
+      }
+
+      .buy-button,
+      .quality-check {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+        max-width: 120px;
+      }
+
+      .signup-content {
+        padding: 50px 40px;
+      }
+
+      .signup-icon {
+        font-size: 4rem;
+      }
+
+      .signup-content h2 {
+        font-size: 2rem;
+      }
+
+      .signup-content p {
+        font-size: 1.2rem;
+      }
+
+      .signup-benefits {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .benefit-item {
+        flex: 1;
+        min-width: 200px;
+        max-width: 220px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .product-image-container {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Signup Modal -->
+  <div id="signupModal" class="signup-modal">
+    <div class="signup-content">
+      <div class="signup-header">
+        <div class="signup-icon">
+          <i class="fas fa-gem"></i>
+        </div>
+        <h2>Join BBDBuy Today!</h2>
+        <p>Unlock exclusive benefits by signing up now</p>
+      </div>
+
+      <div class="signup-benefits">
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-tag"></i>
+          </div>
+          <div class="benefit-text">
+            $100 Welcome Coupons
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="benefit-text">
+            Early Access to New Drops
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-percentage"></i>
+          </div>
+          <div class="benefit-text">
+            Members-Only Discounts
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-gift"></i>
+          </div>
+          <div class="benefit-text">
+            Exclusive Giveaways
+          </div>
+        </div>
+      </div>
+
+      <div class="signup-buttons">
+        <button class="signup-btn yes" onclick="handleSignupChoice(true)">
+          <i class="fas fa-check-circle"></i> Sign Me Up!
+        </button>
+        <button class="signup-btn no" onclick="handleSignupChoice(false)">
+          <i class="fas fa-times-circle"></i> Maybe Later
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Modal -->
+  <div id="socialModal" class="social-modal">
+    <div class="social-content">
+      <div class="social-header">
+        <div class="social-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h2>Join Our Community!</h2>
+        <p>Connect with other BBDBuy members on our social platforms</p>
+      </div>
+
+      <div class="social-buttons">
+        <button class="social-btn discord" onclick="window.open('https://discord.gg/2jyqMFSXjJ', '_blank')">
+          <i class="fab fa-discord"></i> Join Discord
+        </button>
+        <button class="social-btn telegram" onclick="window.open('https://t.me/bbdbuyofficial', '_blank')">
+          <i class="fab fa-telegram"></i> Join Telegram
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrow Pointers -->
+  <div id="discordArrow" class="arrow-pointer" style="display: none;">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 L100,0 L50,100 Z" fill="#FFA300" opacity="0.8" />
+      <text x="50" y="40" text-anchor="middle" fill="white" font-size="12">Join Discord!</text>
+    </svg>
+  </div>
+
+  <div id="telegramArrow" class="arrow-pointer" style="display: none;">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 L100,0 L50,100 Z" fill="#FFA300" opacity="0.8" />
+      <text x="50" y="40" text-anchor="middle" fill="white" font-size="12">Join Telegram!</text>
+    </svg>
+  </div>
+
+  <div class="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="title-bar">
+    <h1>FRY 6k1</h1>
+    <nav>
+      <a href="https://www.instagram.com/fry.6k1/" target="_blank" rel="noopener noreferrer" title="Instagram"
+        id="discordLink">
+        Instagram
+      </a>
+
+    </nav>
+  </header>
+
+
+  <div class="search-container">
+    <input type="text" class="search-bar" placeholder="Search for products...">
+  </div>
+
+  <div class="selector-buttons">
+    <button data-category="shoes"><i class="fas fa-shoe-prints"></i> Shoes</button>
+    <button data-category="jacket"><i class="fas fa-vest"></i> Jacket</button>
+    <button data-category="pull"><i class="fas fa-tshirt"></i> Pull</button>
+    <button data-category="sh shirt"><i class="fas fa-shirt"></i> shirt</button>
+    <button data-category="tshirt"><i class="fas fa-tshirt"></i> T-Shirt</button>
+    <button data-category="shorts"><i class="fas fa-shorts"></i> Shorts</button>
+    <button data-category="pants"><i class="fas fa-pants"></i> Pants</button>
+    <button data-category="accessories"><i class="fas fa-glasses"></i> Accessories</button>
+    <button data-category="tracksuit"><i class="fas fa-running"></i> Tracksuit</button>
+    <button data-category="jewelry"><i class="fas fa-gem"></i> Jewelry</button>
+    <button data-category="electronics"><i class="fas fa-laptop"></i> Electronics</button>
+    <button data-category="all" class="active"><i class="fas fa-list"></i> All</button>
+  </div>
+
+  <div class="product-grid"></div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Quality Check Images</div>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-images">
+        <div class="main-image-container">
+          <img id="main-image" src="#" alt="Main">
+        </div>
+        <div class="thumbnail-container"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    // --- Estimation du poids selon la catégorie / nom ---
+    // 3 € par tranche de 300 g entamée
+    function shippingCostEUR(weightG) {
+      const tiers = Math.max(1, Math.ceil((weightG || 300) / 300));
+      return 3 * tiers;
+    }
+
+    // Estimation poids simple par catégorie/nom (ajuste si besoin)
+    function estimateWeightG(category = '', name = '') {
+      const c = (category || '').toLowerCase();
+      const n = (name || '').toLowerCase();
+      if (/\b(airpod|earbud|earpods)\b/.test(n)) return 120;
+      if (/\b(iphone|phone|tablet|ipad)\b/.test(n)) return 500;
+      if (/\b(watch|smartwatch)\b/.test(n)) return 80;
+      if (/\b(ring|necklace|bracelet|earring|chain)\b/.test(n)) return 100;
+      if (/\b(hoodie|sweatshirt)\b/.test(n)) return 650;
+
+      if (c.includes('shoes')) return 1000;
+      if (c.includes('jacket')) return 800;
+      if (c.includes('pull')) return 600;
+      if (c.includes('shirt') || c.includes('tshirt')) return 250;
+      if (c.includes('shorts')) return 250;
+      if (c.includes('pants')) return 600;
+      if (c.includes('tracksuit')) return 900;
+      if (c.includes('jewelry')) return 100;
+      if (c.includes('electronics')) return 400;
+      if (c.includes('accessories')) return 200;
+      return 300; // défaut
+    }
+
+
+    // --- Règles de prix ---
+    function adjustedPriceEUR(p, category, name) {
+      const weight = estimateWeightG(category, name);
+      const ship = shippingCostEUR(weight);
+
+      if (p >= 0 && p <= 5) return p * 2 + 3;
+      if (p > 5 && p < 10) return p * 2 + ship; // intervalle laissé libre
+      if (p >= 10 && p <= 15) return p * 2.5 + ship;
+      if (p > 15 && p <= 40) return p * 2.5 + ship;
+      if (p > 40 && p <= 60) return p * 2.5 + ship;
+      return p * 3; // > 60
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const productGrid = document.querySelector('.product-grid');
+      const modal = document.getElementById('modal');
+      const mainImage = document.getElementById('main-image');
+      const thumbnailContainer = document.querySelector('.thumbnail-container');
+      const closeBtn = document.querySelector('.close');
+      const buttons = document.querySelectorAll('.selector-buttons button');
+      const searchBar = document.querySelector('.search-bar');
+      const loadingSpinner = document.querySelector('.loading-spinner');
+      const signupModal = document.getElementById('signupModal');
+      const socialModal = document.getElementById('socialModal');
+      const discordArrow = document.getElementById('discordArrow');
+      const telegramArrow = document.getElementById('telegramArrow');
+      const discordLink = document.getElementById('discordLink');
+      const telegramLink = document.getElementById('telegramLink');
+
+      let allProducts = [];
+      let hasShownSocialModal = false;
+
+      function positionArrow(arrow, target) {
+        const targetRect = target.getBoundingClientRect();
+        const arrowRect = arrow.getBoundingClientRect();
+
+        arrow.style.left = `${targetRect.left + (targetRect.width / 2) - (arrowRect.width / 2)}px`;
+        arrow.style.top = `${targetRect.top - arrowRect.height - 10}px`;
+      }
+
+      function showSocialModal() {
+        if (hasShownSocialModal) return;
+
+        socialModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        hasShownSocialModal = true;
+
+        setTimeout(() => {
+          discordArrow.style.display = 'block';
+          telegramArrow.style.display = 'block';
+
+          positionArrow(discordArrow, discordLink);
+          positionArrow(telegramArrow, telegramLink);
+
+          window.addEventListener('resize', () => {
+            positionArrow(discordArrow, discordLink);
+            positionArrow(telegramArrow, telegramLink);
+          });
+        }, 500);
+      }
+
+      function checkSignupResponse() {
+        const hasResponded = localStorage.getItem('hasRespondedToSignup');
+        if (!hasResponded) {
+          setTimeout(() => {
+            signupModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+          }, 1000);
+        }
+      }
+
+      window.handleSignupChoice = function (choice) {
+        localStorage.setItem('hasRespondedToSignup', 'true');
+        signupModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+
+        if (choice) {
+          window.open('https://bbdbuy.com/index/user/register/invite/Mjc3MA==.html', '_blank');
+        } else {
+          setTimeout(showSocialModal, 1000);
+        }
+      }
+
+      checkSignupResponse();
+
+      loadingSpinner.style.display = 'flex';
+
+      function getDeviceType() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        if (/mobile|android|iphone|ipad|ipod/.test(userAgent)) {
+          return 'mobile';
+        } else if (/tablet/.test(userAgent)) {
+          return 'tablet';
+        } else {
+          return 'desktop';
+        }
+      }
+
+      fetch('https://bbd.sillydev.fun/track-view')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Error tracking view! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log('View tracked:', data.message);
+        })
+        .catch(error => {
+          console.error('Error tracking view:', error);
+        });
+
+      fetch('https://bbd.sillydev.fun/log-view', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          device_type: getDeviceType(),
+        }),
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Error tracking view! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log('View logged successfully:', data.message);
+        })
+        .catch(error => {
+          console.error('Error logging view:', error);
+        });
+
+      fetch('https://bbd.sillydev.fun/api/admin/products')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(products => {
+          allProducts = products;
+          renderProducts(products);
+          loadingSpinner.style.display = 'none';
+        })
+        .catch(error => {
+          console.error('Error fetching products:', error);
+          loadingSpinner.style.display = 'none';
+          productGrid.innerHTML = `
+                    <div class="error-message" style="grid-column: 1/-1; text-align: center; padding: 20px; color: white; background: rgba(255,0,0,0.2); border-radius: 10px;">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                        <p>Failed to load products. Please try again later.</p>
+                    </div>
+                `;
+        });
+      function renderProducts(products) {
+        productGrid.innerHTML = '';
+
+        if (products.length === 0) {
+          productGrid.innerHTML = `
+      <div class="no-products" style="grid-column: 1/-1; text-align: center; padding: 20px; color: white;">
+        <i class="fas fa-search" style="font-size: 2rem; margin-bottom: 10px;"></i>
+        <p>No products found matching your criteria.</p>
+      </div>
+    `;
+          return;
+        }
+
+        const sortedProducts = [...products].sort((a, b) => (b.clicks || 0) - (a.clicks || 0));
+        const trendingProducts = sortedProducts.filter(p => (p.clicks || 0) > 1200).slice(0, 4);
+        const trendingIds = new Set(trendingProducts.map(p => p.id));
+        const orderedProducts = [...trendingProducts, ...sortedProducts.filter(p => !trendingIds.has(p.id))];
+
+        orderedProducts.forEach(product => {
+          const isTrending = trendingIds.has(product.id);
+
+          const basePrice = Number(product.price) || 0;
+
+          // cœur de tarification (sans livraison)
+          let pricedCore;
+          if (basePrice < 8) {                 // 0 → <8 : ×2,8
+            pricedCore = basePrice * 2.8;
+          } else if (basePrice < 10) {         // 8 → <10 : ×2
+            pricedCore = basePrice * 2;
+          } else if (basePrice <= 30) {        // 10 → 30 : +10
+            pricedCore = basePrice + 10;
+          } else {                             // >30 : +15
+            pricedCore = basePrice + 15;
+          }
+
+          // livraison incluse dans le prix final (non affichée)
+          const shipping = shippingCostEUR(estimateWeightG(product.category, product.name));
+          const finalPrice = pricedCore + shipping;
+          const finalPriceStr = finalPrice.toFixed(2).replace('.', ',');
+
+          const card = document.createElement('div');
+          card.classList.add('product-card');
+          card.setAttribute('data-product-id', product.id);
+
+          card.innerHTML = `
+      ${isTrending ? '<div class="trending-badge"><i class="fas fa-bolt"></i> Trending</div>' : ''}
+      <div class="product-image-container">
+        <span class="view-count"><i class="fas fa-eye"></i> ${product.clicks || 0}</span>
+        <img src="${product.cover_image}" alt="${product.name}" loading="lazy">
+      </div>
+      <div class="product-info">
+        <h2>${product.name}</h2>
+        <div class="price-wrap">
+          <div class="product-price">€${finalPriceStr}</div>
+        </div>
+        <div class="product-actions">
+          <button class="quality-check" data-product-id="${product.id}" data-images='${JSON.stringify(product.images)}'>
+            <i class="fas fa-search"></i> QC
+          </button>
+        </div>
+      </div>
+    `;
+
+          productGrid.appendChild(card);
+        });
+      }
+
+
+
+
+
+      productGrid.addEventListener('click', (e) => {
+        if (e.target.closest('.quality-check')) {
+          const qcButton = e.target.closest('.quality-check');
+          const productId = qcButton.dataset.productId;
+          const images = JSON.parse(qcButton.dataset.images);
+
+          fetch(`https://bbd.sillydev.fun/track-click/${productId}`, {
+            method: 'POST',
+          })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`Error tracking QC view! Status: ${response.status}`);
+              }
+              return response.json();
+            })
+            .then(data => {
+              console.log('QC view tracked:', data);
+
+              if (data.clicks) {
+                const viewCountElement = document.querySelector(`.product-card[data-product-id="${productId}"] .view-count`);
+                if (viewCountElement) {
+                  viewCountElement.innerHTML = `<i class="fas fa-eye"></i> ${data.clicks}`;
+                }
+
+                if (data.clicks > 1200) {
+                  renderProducts(allProducts);
+                }
+              }
+            })
+            .catch(error => {
+              console.error('Error tracking QC view:', error);
+            });
+
+          if (images && images.length > 0) {
+            mainImage.src = images[0];
+            thumbnailContainer.innerHTML = images.map((img, index) =>
+              `<img src="${img}" alt="Thumbnail ${index + 1}" ${index === 0 ? 'class="active"' : ''}>`
+            ).join('');
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+
+            document.querySelectorAll('.thumbnail-container img').forEach((thumbnail, index) => {
+              thumbnail.addEventListener('click', () => {
+                mainImage.src = images[index];
+                document.querySelectorAll('.thumbnail-container img').forEach(t => t.classList.remove('active'));
+                thumbnail.classList.add('active');
+              });
+            });
+          }
+        }
+      });
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          buttons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          const category = button.getAttribute('data-category');
+
+          if (category === 'all') {
+            renderProducts(allProducts);
+          } else {
+            const filteredProducts = allProducts.filter(product => product.category === category);
+            renderProducts(filteredProducts);
+          }
+        });
+      });
+
+      searchBar.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        const filteredProducts = allProducts.filter(product =>
+          product.name.toLowerCase().includes(searchTerm) ||
+          product.category.toLowerCase().includes(searchTerm)
+        );
+        renderProducts(filteredProducts);
+      });
+
+      closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      });
+
+      window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+        if (e.target === signupModal) {
+          signupModal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+          localStorage.setItem('hasRespondedToSignup', 'true');
+        }
+        if (e.target === socialModal) {
+          socialModal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+          discordArrow.style.display = 'none';
+          telegramArrow.style.display = 'none';
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (modal.style.display === 'block') {
+          if (e.key === 'Escape') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+          }
+        }
+        if (signupModal.style.display === 'block' && e.key === 'Escape') {
+          signupModal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+          localStorage.setItem('hasRespondedToSignup', 'true');
+        }
+        if (socialModal.style.display === 'block' && e.key === 'Escape') {
+          socialModal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+          discordArrow.style.display = 'none';
+          telegramArrow.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+
+<!-- Mirrored from www.bbdspread.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Sep 2025 06:38:25 GMT -->
+
+</html>
